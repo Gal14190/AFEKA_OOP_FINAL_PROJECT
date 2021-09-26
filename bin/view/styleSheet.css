@@ -1,0 +1,64 @@
+/*Gal Ashkenazi 315566752 - Final Test*/
+
+.square {
+	-fx-stroke: gray;
+	-fx-stroke-width: 2px;
+}
+.square:hover {
+	-fx-stroke: green;
+}
+.square.selected {
+	-fx-stroke: pink;
+}
+
+.gameField {
+	-fx-border-color: #AAAAAA; 
+	-fx-border-width: 1px; 
+	-fx-border-radius: 5px;
+	-fx-border-style: solid;
+	-fx-alignment: center;
+}
+
+.newGame_btn {
+	-fx-background-color: #17A2B8;
+	-fx-text-fill: #FFFFFF;
+}
+
+.startGame_btn {
+	-fx-background-color: #007BFF;
+	-fx-font-size: 22px;
+	-fx-text-fill: #FFFFFF;
+}
+
+.cancel_btn {
+	-fx-background-color: #6C757D;
+	-fx-text-fill: #FFFFFF;
+}
+
+.top10_txt {
+	-fx-text-alignment: center;
+	-fx-font-size: 20px;
+}
+
+.darkMode_txt {
+	-fx-fill: #FFFFFF;
+	-fx-text-fill: #FFFFFF;
+}
+
+.darkMode_btn {
+	-fx-text-fill: #FFFFFF;
+	-fx-background-color: #343A40;
+}
+
+.lightMode_btn {
+	-fx-text-fill: #000000;
+	-fx-background-color: #FAFAFA;
+}
+
+.darkMode_root {
+	-fx-background-color: #343A40;
+}
+
+.lightMode_roor {
+	-fx-background-color: #FAFAFA;
+}
