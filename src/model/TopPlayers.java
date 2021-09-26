@@ -16,8 +16,8 @@ public class TopPlayers {
 	 * @param _score
 	 * @param _playerName
 	 */
-	public TopPlayers(int _score, String _playerName, String _timeDate) {
-		this.score = _score;
+	public <T extends Comparable<T>>TopPlayers(T _score, String _playerName, String _timeDate) {
+		setScore(_score);
 		this.playerName = _playerName;
 		this.timeDate = _timeDate;
 	}
@@ -28,8 +28,12 @@ public class TopPlayers {
 		return score;
 	}
 
-	public void setScore(int score) {
-		this.score = score;
+	public <T extends Comparable<T>> void setScore(T _score) {
+		if(_score instanceof String) 
+			this.score = Integer.parseInt((String)_score);
+		else {
+			this.score = (int)_score;
+		}
 	}
 	public String getPlayerName() {
 		return playerName;
